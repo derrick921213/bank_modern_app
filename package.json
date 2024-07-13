@@ -13,7 +13,7 @@
     "format:check": "prettier . --check --ignore-unknown",
     "format": "prettier . --write --ignore-unknown",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -f"
   },
   "dependencies": {
     "gh-pages": "^6.1.1",
