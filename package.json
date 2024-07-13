@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/derrick921213/bank_modern_app",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -10,7 +11,9 @@
     "preview": "vite preview",
     "lint:check": "eslint --ext=js,jsx,ts,tsx src/",
     "format:check": "prettier . --check --ignore-unknown",
-    "format": "prettier . --write --ignore-unknown"
+    "format": "prettier . --write --ignore-unknown",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^6.1.1",
